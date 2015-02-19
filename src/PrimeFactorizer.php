@@ -13,7 +13,12 @@ class PrimeFactorizer {
 			$primes[] = 3;
 			$integer /= 3;
 		}
-		
+
+		while ($integer % 5 == 0) {
+			$primes[] = 5;
+			$integer /= 5;
+		}
+
 		if ($integer > 1) {
 			$primes[] = $integer;
 		}
