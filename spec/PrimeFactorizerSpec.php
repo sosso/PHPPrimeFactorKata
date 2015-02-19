@@ -26,4 +26,7 @@ class PrimeFactorizerSpec extends ObjectBehavior {
 	function it_returns_5_for_5() {
 		$this->generate(5)->shouldReturn([5]);
 	}
+	function it_returns_2_3_for_6() {
+		$this->generate(6)->shouldReturn([2,3]);
+	}
 }
