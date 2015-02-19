@@ -3,7 +3,7 @@
 class PrimeFactorizer {
 	public function generate($integer) {
 		$primes = [];
-		if ($integer % 2 == 0) {
+		while ($integer % 2 == 0) {
 			$primes[] = 2;
 			$integer /= 2;
 		}
