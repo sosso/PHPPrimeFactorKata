@@ -2,6 +2,6 @@
 
 class PrimeFactorizer {
 	public function generate($integer) {
-
+		return [];
     }
 }
