@@ -2,6 +2,10 @@
 
 class PrimeFactorizer {
 	public function generate($integer) {
-		return [];
+		if ($integer > 1) {
+			return [$integer];
+		} else {
+			return [];
+		}
     }
 }
