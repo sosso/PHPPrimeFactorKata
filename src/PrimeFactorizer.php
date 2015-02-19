@@ -5,6 +5,7 @@ class PrimeFactorizer {
 		$primes = [];
 		if ($integer % 2 == 0) {
 			$primes[] = 2;
+			$integer /= 2;
 		}
 		if ($integer > 1) {
 			$primes[] = $integer;
